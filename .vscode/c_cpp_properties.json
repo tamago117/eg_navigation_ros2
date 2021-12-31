@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/ros_ws/install/turtlesim/include/**",
+        "/ros_ws/install/ca_msgs/include/**",
+        "/opt/ros/foxy/include/**",
+        "/ros_ws/src/create_autonomy/ca_driver/include/**",
+        "/ros_ws/src/eg_navigation_ros2/eg_wptool/include/**",
+        "/ros_ws/src/hello_world/include/**",
+        "/ros_ws/src/libcreate/include/**",
+        "/ros_ws/src/ros_tutorials/turtlesim/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

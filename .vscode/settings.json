@@ -1,0 +1,7 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/ros_ws/install/turtlesim/lib/python3.8/site-packages",
+        "/ros_ws/install/ca_msgs/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}
