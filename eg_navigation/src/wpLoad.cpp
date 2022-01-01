@@ -45,7 +45,7 @@ public:
 
         auto publish_path = [this]() -> void
         {
-            nav_msgs::msg::Path path;
+            static nav_msgs::msg::Path path;
             //csv読み込み
             csv::csv_input csv(filePath);
 

@@ -86,6 +86,7 @@ wpVisualizer::wpVisualizer(const std::string& node_name)
         "wayPoint/path", 10, std::bind(&wpVisualizer::path_callback, this, std::placeholders::_1));
 
 
+
     timer = create_wall_timer(std::chrono::milliseconds(1000/rate), std::bind(&wpVisualizer::publish_marker, this));
 }
 
@@ -106,7 +107,7 @@ void wpVisualizer::publish_marker()
         marker.id = markerText.id = i;
         //marker.id = 0;
         //markerText.id = 1;
-        marker.lifetime = markerText.lifetime = rclcpp::Duration(0);
+        marker.lifetime = markerText.lifetime = rclcpp::Duration(1);
         marker.type = visualization_msgs::msg::Marker::CYLINDER;
         markerText.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING;
         marker.action = markerText.action = visualization_msgs::msg::Marker::ADD;
