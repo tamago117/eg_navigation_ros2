@@ -10,6 +10,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
@@ -19,6 +20,7 @@ include_directories(
   ${std_msgs_INCLUDE_DIRS}
   ${geometry_msgs_INCLUDE_DIRS}
   ${nav_msgs_INCLUDE_DIRS}
+  ${visualization_msgs_INCLUDE_DIRS}
   ${tf2_INCLUDE_DIRS}
   ${rclcpp_INCLUDE_DIRS})
 
@@ -47,6 +49,7 @@ function(custom_executable target)
   ament_target_dependencies(${target} "rclcpp"
                                       "std_msgs"
                                       "nav_msgs"
+                                      "visualization_msgs"
                                       "geometry_msgs"
                                       "tf2_ros"
                                       "tf2")
@@ -55,6 +58,7 @@ endfunction()
 
 # talkerノードのビルド設定
 custom_executable(wpLoad)
+custom_executable(wpVisualizer)
 
 ament_export_include_directories(include)
 
