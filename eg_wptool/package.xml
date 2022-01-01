@@ -3,15 +3,19 @@
 <package format="3">
   <name>eg_wptool</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="ubuntu@todo.todo">ubuntu</maintainer>
-  <license>TODO: License declaration</license>
+  <description>way point tools</description>
+  <maintainer email="egrt117@gmail.com">ubuntu</maintainer>
+  <license>Apache License, Version 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <!--<depend>rclcpp</depend>-->
-  <build_depend>rclcpp</build_depend>
-  <exec_depend>rclcpp</exec_depend>
+  <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
   <exec_depend>launch_ros</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
